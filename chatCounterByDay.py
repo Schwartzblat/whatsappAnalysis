@@ -2,7 +2,7 @@ import timeit
 import xlsxwriter
 import re
 
-pattern = re.compile('[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{4}')
+pattern = re.compile('[0-9]{1,2}[\.\/][0-9]{1,2}[\.\/][0-9]{4}')
 file = open("filename", mode="r", encoding="utf-8")
 lines = file.readlines()
 file.close()

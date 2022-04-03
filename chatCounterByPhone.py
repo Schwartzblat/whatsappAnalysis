@@ -1,6 +1,6 @@
 import re
 
-pattern = re.compile("\[[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{4}, [0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2}\] .+:")
+pattern = re.compile("\[[0-9]{1,2}[\.\/][0-9]{1,2}[\.\/][0-9]{4}, [0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2}\] .+:")
 
 with open("filename", mode="r", encoding="utf-8") as file:
     text = file.read()
